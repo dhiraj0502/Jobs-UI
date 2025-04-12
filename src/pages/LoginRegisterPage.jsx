@@ -14,7 +14,7 @@ const LoginRegisterPage = () => {
     try {
       const endpoint = isLogin ? "/api/v1/user/login" : "/api/v1/user/register";
       const response = await fetch(
-        `https://express-job-api.onrender.com${endpoint}`,
+        `https://job-api-z32i.onrender.com${endpoint}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
