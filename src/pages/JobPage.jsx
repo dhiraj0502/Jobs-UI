@@ -232,7 +232,7 @@ const JobPage = ({ deleteJob, applyjob }) => {
 const jobLoader = async ({ params }) => {
   const storedUserData = JSON.parse(localStorage.getItem("user"));
   const res = await fetch(
-    `https://express-job-api.onrender.com/api/v1/jobs/${params.id}`,
+    `https://job-api-z32i.onrender.com/api/v1/jobs/${params.id}`,
     {
       method: "GET",
       headers: {
