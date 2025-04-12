@@ -24,7 +24,7 @@ const App = () => {
       const storedUserData = JSON.parse(localStorage.getItem("user"));
       console.log("stored toke data is ..........", storedUserData["token"]);
       const res = await fetch(
-        "https://express-job-api.onrender.com/api/v1/jobs",
+        "https://job-api-z32i.onrender.com/api/v1/jobs",
         {
           method: "POST",
           headers: {
@@ -50,7 +50,7 @@ const App = () => {
     const storedUserData = JSON.parse(localStorage.getItem("user"));
     console.log("DELETE CALL......", id);
     const res = await fetch(
-      `https://express-job-api.onrender.com/api/v1/jobs/${id}`,
+      `https://job-api-z32i.onrender.com/api/v1/jobs/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -70,7 +70,7 @@ const App = () => {
   const updateJob = async (job) => {
     const storedUserData = JSON.parse(localStorage.getItem("user"));
     const res = await fetch(
-      `https://express-job-api.onrender.com/api/v1/jobs/${job.id}`,
+      `https://job-api-z32i.onrender.com/api/v1/jobs/${job.id}`,
       {
         method: "PATCH",
         headers: {
@@ -96,7 +96,7 @@ const App = () => {
       const storedUserData = JSON.parse(localStorage.getItem("user"));
       console.log("stored toke data is ..........", storedUserData["token"]);
       const res = await fetch(
-        "https://express-job-api.onrender.com/api/v1/jobs/apply",
+        "https://job-api-z32i.onrender.com/api/v1/jobs/apply",
         {
           method: "POST",
           headers: {
